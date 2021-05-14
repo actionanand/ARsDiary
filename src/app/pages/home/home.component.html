@@ -1,0 +1,57 @@
+<wp-page slug="home">
+  <ng-template let-page="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-3">{{ page.title.rendered }}</h1>
+          <div [innerHTML]="page.content.rendered"></div>
+        </div>
+      </div>
+
+      <wp-post slug="about">
+        <ng-template let-about="post">
+          <div class="card mb-4 bg-dark border-white text-white">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <wp-image size="medium" [mediaId]="about.featured_media">
+                  <ng-template let-image="image" let-media="media">
+                    <img [src]="image.source_url" class="w-100" [alt]="media.alt_text" />
+                  </ng-template>
+                </wp-image>
+                <div class="card-img-overlay">
+                  <h2 class="card-title">{{ about.title.rendered }}</h2>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <div class="card-text" [innerHTML]="about.content.rendered"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </wp-post>
+
+      <wp-post-list class="row" category="7">
+        <ng-template let-post="post">
+          <div class="col">
+            <a class="card mb-4 bg-dark text-white border-white" [routerLink]="post.slug">
+              <wp-image size="medium" [mediaId]="post.featured_media">
+                <ng-template let-image="image" let-media="media">
+                  <img [src]="image.source_url" class="w-100" [alt]="media.alt_text" />
+                </ng-template>
+              </wp-image>
+              <div class="card-img-overlay mb-5">
+                <h2 class="card-title">{{ post.title.rendered }}</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text" [innerHTML]="post.excerpt.rendered"></p>
+              </div>
+            </a>
+          </div>
+
+        </ng-template>
+      </wp-post-list>
+    </div>
+  </ng-template>
+</wp-page>
