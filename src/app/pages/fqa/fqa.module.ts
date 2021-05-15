@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FqaRoutingModule } from './fqa-routing.module';
 import { FqaComponent } from './fqa.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { FqaComponent } from './fqa.component';
   ],
   imports: [
     CommonModule,
-    FqaRoutingModule
+    FqaRoutingModule,
+    SharedModule
   ]
 })
 export class FqaModule { }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PostRoutingModule } from './post-routing.module';
 import { PostComponent } from './post.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { PostComponent } from './post.component';
   ],
   imports: [
     CommonModule,
-    PostRoutingModule
+    PostRoutingModule,
+    SharedModule
   ]
 })
 export class PostModule { }
