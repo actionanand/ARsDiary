@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="display-3">{{ page.title.rendered }}</h1>
+          <!-- <h1 class="display-3">{{ page.title.rendered }}</h1> -->
           <div [innerHTML]="page.content.rendered"></div>
         </div>
       </div>
@@ -32,7 +32,7 @@
         </ng-template>
       </wp-post>
 
-      <wp-post-list class="row" category="7">
+      <wp-post-list class="row" category="4">
         <ng-template let-post="post">
           <div class="col">
             <a class="card mb-4 bg-dark text-white border-white" [routerLink]="post.slug">

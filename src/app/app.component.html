@@ -4,11 +4,12 @@
       <a class="navbar-brand" routerLink="/">
         <wp-info>
           <ng-template let-info="info">
-            {{ info.name }}: <span class="font-weight-lighter">{{ info.description }}</span>
+            {{ info.name }}
+            <!-- <span class="font-weight-lighter">{{ info.description }}</span> -->
           </ng-template>
         </wp-info>
       </a>
-      <wp-menu class="navbar-nav" menuId="8">
+      <wp-menu class="navbar-nav" menuId="10">
         <ng-template let-menuItem="menuItem">
           <a class="nav-item nav-link"
              routerLinkActive="active"
@@ -27,7 +28,7 @@
 
   <footer class="bg-light flex-shrink-1">
     <div class="container">
-      <wp-menu class="nav flex-row" menuId="8">
+      <wp-menu class="nav flex-row" menuId="3">
         <ng-template let-menuItem="menuItem">
           <a class="nav-link small pl-0"
              routerLinkActive="active"
