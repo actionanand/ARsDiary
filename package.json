@@ -8,8 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "buildNg": "ng build --prod --stats-json",
     "scully": "npx scully --",
-    "scully:serve": "npx scully serve --"
+    "scully:serve": "npx scully serve --",
+    "build:scully": "npm run buildNg && npm run scully -- --scanRoutes"
   },
   "private": true,
   "dependencies": {

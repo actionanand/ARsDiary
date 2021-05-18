@@ -10,7 +10,8 @@ import { environment } from '../../environments/environment';
   declarations: [],
   imports: [
     CommonModule,
-    NgWpComponentsModule.forRoot(environment.wp_url)
+    // NgWpComponentsModule.forRoot(environment.wp_url)
+    NgWpComponentsModule.forRoot(environment.wp_url2)
   ],
   exports: [
     NgWpComponentsModule

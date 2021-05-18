@@ -7,11 +7,16 @@ import { getSitemapPlugin } from '@gammastream/scully-plugin-sitemap';
 
 const sitemapPlugin = getSitemapPlugin();
 
+// const urlScully = 'https://arsdiary.xyz';
+const urlScully = 'https://wp.learnario.com';
+const urlSiteMap = 'https://arsdiary.netlify.app';
+
 setPluginConfig( sitemapPlugin, {
-  urlPrefix: 'https://arsdiary.netlify.app/',
+  urlPrefix: urlSiteMap,
   sitemapFilename: 'sitemap.xml',
   merge: false,
   trailingSlash: false,
+  ignoredRoutes: ['/page-not-found']
 });
 
 const postRenderers = [
@@ -45,7 +50,7 @@ export const config: ScullyConfig = {
   routes: {
     '/:post-slug': {
       type: WordpressData,
-      url: 'https://arsdiary.xyz',
+      url: urlScully,
       'post-slug': {
         data: 'posts',
         property: 'slug'
