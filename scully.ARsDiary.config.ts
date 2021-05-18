@@ -1,8 +1,15 @@
 import { ScullyConfig } from '@scullyio/scully';
 import { WordpressData } from 'scully-wordpress-plugin';
 import { MinifyHtml } from 'scully-plugin-minify-html';
+import { getDelayAngularPlugin } from '@flowaccount/scully-plugin-angular-delay';
 
-const postRenderers = [MinifyHtml];
+const postRenderers = [
+  MinifyHtml,
+  getDelayAngularPlugin({
+    tsConfigPath: 'tsconfig.json',
+    delayMilliseconds: 1500
+  })
+];
 
 export const config: ScullyConfig = {
   projectRoot: "./src",
