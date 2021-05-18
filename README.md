@@ -50,8 +50,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 It'll display as below. Please note down the PID from that
 
-```COMMAND PID   USER  FD  TYPE DEVICE             SIZE/OFF NODE NAME``` 
-```node    44475 chen5 31u IPv4 0x8b1721168764e4bf 0t0 TCP *:strexec-s (LISTEN)```
+`COMMAND PID   USER  FD  TYPE DEVICE                SIZE/OFF NODE NAME`\
+`node    44475 chen5 31u IPv4 0x8b1721168764e4bf 0t0 TCP *:strexec-s (LISTEN)`
 
 2. Then to kill the process by PID
 
