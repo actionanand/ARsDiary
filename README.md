@@ -39,6 +39,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 - [Scully wordpress plugin](https://www.npmjs.com/package/scully-wordpress-plugin)
 - [Scully plugin angular delay](https://www.npmjs.com/package/@flowaccount/scully-plugin-angular-delay)
 - [Scully Plugin Sitemap](https://www.npmjs.com/package/@gammastream/scully-plugin-sitemap)
+- [Scully Plugin Minify HTML](https://www.npmjs.com/package/scully-plugin-minify-html)
 - [NPM Install Peer](https://www.npmjs.com/package/npm-install-peers)
 
 ## Troubleshooting
