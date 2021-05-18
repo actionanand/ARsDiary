@@ -27,8 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  - Run `npm run scully -- --scanRoutes` to scan the Routes (have to run whenever new routes are there)
  - Run `npm run scully` (have to run after building the app)
  - Run `npm run scully -- --watch`
- if didn't open in watch mode
- - Run `npm run scully:serve` and open Scully [Static server](http://localhost:1668/) 
+ - If the above commend didn't open in watch mode, then Run `npm run scully:serve` and open Scully [Static server](http://localhost:1668/).
  - set `build:scully` as a command for production to start the app in the server
 
  ## Scully - Help
@@ -49,8 +48,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 `lsof -i tcp:1668`
 
-*COMMAND PID   USER  FD  TYPE DEVICE             SIZE/OFF NODE NAME 
-node    44475 chen5 31u IPv4 0x8b1721168764e4bf 0t0 TCP *:strexec-s (LISTEN)*
+It'll display as below. Please note down the PID from that
+
+```COMMAND PID   USER  FD  TYPE DEVICE             SIZE/OFF NODE NAME`` 
+```node    44475 chen5 31u IPv4 0x8b1721168764e4bf 0t0 TCP *:strexec-s (LISTEN)```
 
 2. Then to kill the process by PID
 
