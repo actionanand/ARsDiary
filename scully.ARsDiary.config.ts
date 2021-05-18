@@ -1,7 +1,18 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 import { WordpressData } from 'scully-wordpress-plugin';
 import { MinifyHtml } from 'scully-plugin-minify-html';
 import { getDelayAngularPlugin } from '@flowaccount/scully-plugin-angular-delay';
+import { getSitemapPlugin } from '@gammastream/scully-plugin-sitemap';
+
+
+const sitemapPlugin = getSitemapPlugin();
+
+setPluginConfig( sitemapPlugin, {
+  urlPrefix: 'https://arsdiary.netlify.app/',
+  sitemapFilename: 'sitemap.xml',
+  merge: false,
+  trailingSlash: false,
+});
 
 const postRenderers = [
   MinifyHtml,
