@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { ScullyInterceptModule } from 'scully-interceptor';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ScullyLibModule
+    ScullyLibModule,
+    ScullyInterceptModule
   ],
   providers: [],
   bootstrap: [AppComponent]
