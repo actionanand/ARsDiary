@@ -20,5 +20,12 @@ export const config: ScullyConfig = {
       ]
     },
   routes: {
+    '/:post-slug': {
+      type: 'json',
+      'post-slug': {
+        url: 'https://arsdiary.xyz/wp-json/wp/v2/posts?per_page=100',
+        property: 'slug'
+      }
+    }
   }
 };
