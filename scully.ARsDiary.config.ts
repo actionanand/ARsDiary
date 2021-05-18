@@ -1,4 +1,9 @@
 import { ScullyConfig } from '@scullyio/scully';
+import { WordpressData } from 'scully-wordpress-plugin';
+import { MinifyHtml } from 'scully-plugin-minify-html';
+
+const postRenderers = [MinifyHtml];
+
 export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "ARsDiary",
@@ -21,11 +26,13 @@ export const config: ScullyConfig = {
     },
   routes: {
     '/:post-slug': {
-      type: 'json',
+      type: WordpressData,
+      url: 'https://arsdiary.xyz',
       'post-slug': {
-        url: 'https://arsdiary.xyz/wp-json/wp/v2/posts?per_page=100',
+        data: 'posts',
         property: 'slug'
       }
     }
-  }
+  },
+  defaultPostRenderers: postRenderers
 };
