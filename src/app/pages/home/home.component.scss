@@ -1,0 +1,160 @@
+// /* [1] The container */
+// .img-hover-zoom {
+//   height: 300px; /* [1.1] Set it as per your need */
+//   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+// }
+
+// /* [2] Transition property for smooth transformation of images */
+// .img-hover-zoom img {
+//   transition: transform .5s ease;
+// }
+
+// /* [3] Finally, transforming the image when container gets hovered */
+// .img-hover-zoom:hover img {
+//   transform: scale(1.5);
+// }
+
+
+/* Gray Scale */
+.grey__img img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.grey__img:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+// /* Blur */
+// .blur__img img {
+// 	-webkit-filter: blur(3px);
+// 	filter: blur(3px);
+// 	-webkit-transition: .3s ease-in-out;
+// 	transition: .3s ease-in-out;
+// }
+// .blur__img:hover img {
+// 	-webkit-filter: blur(0);
+// 	filter: blur(0);
+// }
+
+
+
+// /* Flashing */
+// .card__flash:hover .card-text {
+// 	opacity: 1;
+// 	-webkit-animation: flash 1.5s;
+// 	animation: flash 1.5s;
+// }
+// @-webkit-keyframes flash {
+// 	0% {
+// 		opacity: .4;
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
+// @keyframes flash {
+// 	0% {
+// 		opacity: .4;
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
+
+
+
+// /* Circle */
+// .card__circle .card-text {
+// 	position: relative;
+// }
+// .card__circle .card-text::before {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	z-index: 2;
+// 	display: block;
+// 	content: '';
+// 	width: 0;
+// 	height: 0;
+// 	background: rgba(255,255,255,.2);
+// 	border-radius: 100%;
+// 	-webkit-transform: translate(-50%, -50%);
+// 	transform: translate(-50%, -50%);
+// 	opacity: 0;
+// }
+// .card__circle .card-text:hover::before {
+// 	-webkit-animation: circle .75s;
+// 	animation: circle .75s;
+// }
+// @-webkit-keyframes circle {
+// 	0% {
+// 		opacity: 1;
+// 	}
+// 	40% {
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		width: 200%;
+// 		height: 200%;
+// 		opacity: 0;
+// 	}
+// }
+// @keyframes circle {
+// 	0% {
+// 		opacity: 1;
+// 	}
+// 	40% {
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		width: 200%;
+// 		height: 200%;
+// 		opacity: 0;
+// 	}
+// }
+
+
+
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  // height: 200px;
+  // width: 257px;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(92, 184, 92, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}

@@ -1,14 +1,14 @@
 <div class="d-flex flex-column vh-100">
   <header class="bg-dark text-white shadow py-1">
-    <nav class="navbar navbar-dark navbar-expand-sm">
-      <a class="navbar-brand" routerLink="/">
-        <wp-info>
-          <ng-template let-info="info">
+    <nav class="navbar navbar-dark navbar-expand-sm justify-content-between px-4">
+      <wp-info>
+        <ng-template let-info="info">
+          <a class="navbar-brand" routerLink="/">
             {{ info.name }}
-            <!-- <span class="font-weight-lighter">{{ info.description }}</span> -->
-          </ng-template>
-        </wp-info>
-      </a>
+          </a>
+          <span class="font-weight-lighter breadcrumb-item active">{{ info.description }}</span>
+        </ng-template>
+      </wp-info>
       <!-- <wp-menu class="navbar-nav" menuId="10"> -->
       <wp-menu class="navbar-nav" menuId="6">
         <ng-template let-menuItem="menuItem">
@@ -49,7 +49,7 @@
           {{ info.name }}
         </ng-template>
       </wp-info>
-      2021
+      {{currentYear}}
     </div>
   </footer>
 </div>

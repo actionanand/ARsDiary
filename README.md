@@ -36,7 +36,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  - [Netlify](https://www.netlify.com/)
 
 ## Scully miscellaneous - Help
-- [Scully wordpress plugin](https://www.npmjs.com/package/scully-wordpress-plugin)
+- [Ng Wp Components](https://www.npmjs.com/package/ng-wp-components)
+- [Scully Wordpress Plugin](https://www.npmjs.com/package/scully-wordpress-plugin)
 - [Scully plugin angular delay](https://www.npmjs.com/package/@flowaccount/scully-plugin-angular-delay)
 - [Scully Plugin Sitemap](https://www.npmjs.com/package/@gammastream/scully-plugin-sitemap)
 - [Scully Plugin Minify HTML](https://www.npmjs.com/package/scully-plugin-minify-html)
