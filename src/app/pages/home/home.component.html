@@ -17,14 +17,17 @@
 
       <wp-post slug="about">
         <ng-template let-about="post">
-          <div class="card mb-4 text-white" [ngStyle]="{'background-color':bgColor}"
+          <div class="card h-100 mb-4 text-white" [ngStyle]="{'background-color':bgColor}"
             (mouseover)="changeStyle($event)" (mouseout)="changeStyle($event)">
             <div class="row no-gutters">
               <div class="col-4">
                 <wp-image size="medium" [mediaId]="about.featured_media">
                   <ng-template let-image="image" let-media="media">
-                    <div class="img-hover-zoom grey__img blur__img">
-                      <img [src]="image.source_url" class="w-100" [alt]="media.alt_text" />
+                    <div class="grey__img blur__img">
+                      <img [src]="image.source_url" class="w-100" [alt]="image.alt_text" *ngIf="!!image; else openAboutMedia" />
+                      <ng-template #openAboutMedia>
+                        <img [src]="media.source_url" class="w-100" [alt]="media.alt_text" />
+                      </ng-template>
                     </div>
                   </ng-template>
                 </wp-image>
@@ -42,22 +45,27 @@
         </ng-template>
       </wp-post>
 
-      <!-- <wp-post-list class="row" category="4"> -->
-      <wp-post-list class="row justify-content-center" category="7">
+      <wp-post-list class="row" category="13">
+      <!-- <wp-post-list class="row justify-content-center" category="7"> -->
         <ng-template let-post="post">
           <div class="col-md-4 img__wrap">
-            <div class="card mb-4 bg-dark text-white text-center">
+            <div class="card h-100 mb-4 bg-dark text-white text-center">
               <wp-image size="medium" [mediaId]="post.featured_media">
                 <ng-template let-image="image" let-media="media">
-                  <img [src]="image.source_url" class="w-100 hover-shadow img__img" [alt]="media.alt_text" />
+                  <div>
+                    <img [src]="image.source_url" class="w-100 hover-shadow img__img" [alt]="image.alt_text" *ngIf="!!image; else openCardMedia" />
+                    <ng-template #openCardMedia>
+                      <img [src]="media.source_url" class="w-100 hover-shadow img__img" [alt]="media.alt_text" />
+                    </ng-template>
+                  </div>
                 </ng-template>
               </wp-image>
               <div class="card-body d-flex flex-column img__description_layer">
-                <p class="card-text img__description" [innerHTML]="post.excerpt.rendered | stripHtml | ellipsis:108"></p>
+                <p class="card-text img__description" [innerHTML]="post.excerpt.rendered | stripHtml | ellipsis:201"></p>
               <a class="btn btn-success" [routerLink]="post.slug"> Read More </a>
               </div>
               <div class="card-footer card-title">
-                {{ post.title.rendered | ellipsis:25}}
+                {{ post.title.rendered | ellipsis:35}}
               </div>
             </div>
           </div>

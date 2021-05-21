@@ -5,7 +5,12 @@
         <h5 class="card-header text-center">{{ post.title.rendered }}</h5>
         <wp-image size="large" [mediaId]="post.featured_media">
           <ng-template let-image="image" let-media="media">
-            <img class="w-100" [src]="image.source_url" [alt]="media.alt_text" />
+            <div class="img-hover-zoom">
+              <img class="w-100" [src]="image.source_url" [alt]="image.alt_text" *ngIf="!!image; else openPostMedia" />
+              <ng-template #openPostMedia>
+                <img class="w-100" [src]="media.source_url" [alt]="media.alt_text"/>
+              </ng-template>
+            </div>
           </ng-template>
         </wp-image>
         <div class="card-body">

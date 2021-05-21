@@ -4,13 +4,13 @@
       <wp-info>
         <ng-template let-info="info">
           <a class="navbar-brand" routerLink="/">
-            {{ info.name }}
+            {{ info.name | rmApostrophe }}
           </a>
           <span class="font-weight-lighter breadcrumb-item active">{{ info.description }}</span>
         </ng-template>
       </wp-info>
-      <!-- <wp-menu class="navbar-nav" menuId="10"> -->
-      <wp-menu class="navbar-nav" menuId="6">
+      <wp-menu class="navbar-nav" menuId="10">
+      <!-- <wp-menu class="navbar-nav" menuId="6"> -->
         <ng-template let-menuItem="menuItem">
           <a class="nav-item nav-link"
              routerLinkActive="active"
@@ -29,8 +29,8 @@
 
   <footer class="bg-light flex-shrink-1">
     <div class="container">
-      <!-- <wp-menu class="nav flex-row" menuId="3"> -->
-      <wp-menu class="nav flex-row" menuId="9">
+      <wp-menu class="nav flex-row" menuId="3">
+      <!-- <wp-menu class="nav flex-row" menuId="9"> -->
         <ng-template let-menuItem="menuItem">
           <a class="nav-link small pl-0"
              routerLinkActive="active"
@@ -46,7 +46,7 @@
       &copy;
       <wp-info>
         <ng-template let-info="info">
-          {{ info.name }}
+          {{ info.name | rmApostrophe }}
         </ng-template>
       </wp-info>
       {{currentYear}}

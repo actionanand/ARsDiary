@@ -1,0 +1,12 @@
+.faq__left{
+  &--element {
+    cursor: pointer;
+  }
+  &--element:hover {
+    background: #5cb85c;
+  }
+}
+
+// .list-group-item-action{
+//   background: green;
+// }

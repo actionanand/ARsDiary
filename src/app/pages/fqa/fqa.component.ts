@@ -11,5 +11,4 @@ export class FqaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

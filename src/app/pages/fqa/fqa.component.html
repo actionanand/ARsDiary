@@ -9,13 +9,13 @@
       </div>
 
       <div class="row">
-        <div class="col-3">
+        <div class="col-3 faq__left list-group">
           <wp-post-list class="sticky-top d-block" orderBy="date" order="asc" category="8">
             <ng-template let-post="post">
-              <a class="d-block"
+              <div class="faq__left--element d-block list-group-item list-group-item-action"
                  routerLink="." [fragment]="post.slug" skipLocationChange>
                 {{ post.title.rendered }}
-              </a>
+            </div>
             </ng-template>
           </wp-post-list>
         </div>
