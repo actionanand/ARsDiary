@@ -61,6 +61,18 @@ It'll display as below. Please note down the PID from that
 
 -[source](https://levelup.gitconnected.com/how-to-kill-server-when-seeing-eaddrinuse-address-already-in-use-16c4c4d7fe5d)
 
+## Wordpress Rest API - help
+1. Make sure `permalink` is updated to post name (Settings -> permalinks) `https://your-site-name/wp-admin/options-permalink.php`
+2. Please install the wp plugin [WP-REST-API V2 Menus](https://wordpress.org/plugins/wp-rest-api-v2-menus/) to support menu options in api.
+3. Some API endpoints for help
+- To go to admin page: `https://your-site-name/wp-admin`
+- To check whether REST API is enabled or not : `https://your-site-name/wp-json`
+- If REST API is not enabled, Please check point number 1.
+- To check categories: `https://your-site-name/wp-json/wp/v2/categories`
+- To check posts: `https://your-site-name/wp-json/wp/v2/posts` , `https://your-site-name/wp-json/wp/v2/posts?per_page=100`
+- To check pages: `https://your-site-name/wp-json/wp/v2/pages`
+- To check home post slug: `https://your-site-name/wp-json/wp/v2/pages?slug=home`
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

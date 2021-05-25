@@ -7,9 +7,11 @@ import { getSitemapPlugin } from '@gammastream/scully-plugin-sitemap';
 
 const sitemapPlugin = getSitemapPlugin();
 
-// const urlScully = 'https://arsdiary.xyz';
-const urlScully = 'https://wp.learnario.com';
-const urlSiteMap = 'https://arsdiary.netlify.app';
+// const urlScullyFull = 'https://digital.techiear.com/wp-json/wp/v2/posts?per_page=100';
+const urlScully = 'https://digital.techiear.com/';
+// const urlScully = 'https://wp.learnario.com';
+// const urlSiteMap = 'https://arsdiary.netlify.app';
+const urlSiteMap = 'https://techiear.com/';
 
 setPluginConfig( sitemapPlugin, {
   urlPrefix: urlSiteMap,
@@ -47,6 +49,15 @@ export const config: ScullyConfig = {
         "--disable-extensions"
       ]
     },
+  //   routes: {
+  //   '/:post-slug': {
+  //     type: 'json',
+  //     'post-slug': {
+  //       url: urlScullyFull,
+  //       property: 'slug'
+  //     }
+  //   }
+  // },
   routes: {
     '/:post-slug': {
       type: WordpressData,

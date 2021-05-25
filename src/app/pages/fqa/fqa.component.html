@@ -10,7 +10,8 @@
 
       <div class="row">
         <div class="col-3 faq__left list-group">
-          <wp-post-list class="sticky-top d-block" orderBy="date" order="asc" category="8">
+          <wp-post-list class="sticky-top d-block" orderBy="date" order="asc" category="9">
+          <!-- <wp-post-list class="sticky-top d-block" orderBy="date" order="asc" category="8"> -->
             <ng-template let-post="post">
               <div class="faq__left--element d-block list-group-item list-group-item-action"
                  routerLink="." [fragment]="post.slug" skipLocationChange>
@@ -20,7 +21,8 @@
           </wp-post-list>
         </div>
         <div class="col-9">
-          <wp-post-list orderBy="date" order="asc" category="8">
+          <wp-post-list orderBy="date" order="asc" category="9">
+          <!-- <wp-post-list orderBy="date" order="asc" category="8"> -->
             <ng-template let-post="post">
               <section [id]="post.slug">
                 <h2>{{ post.title.rendered }}</h2>
