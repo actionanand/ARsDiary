@@ -1,8 +1,8 @@
 <wp-page slug="home">
   <ng-template let-page="page">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
+      <div class="row d-flex justify-content-end">
+        <div class="col-8">
           <figure class="text-end">
             <blockquote class="blockquote">
               <!-- <h1 class="display-6">{{ page.title.rendered }}</h1> -->
@@ -23,7 +23,7 @@
               <div class="col-4">
                 <wp-image size="medium" [mediaId]="about.featured_media">
                   <ng-template let-image="image" let-media="media">
-                    <div class="grey__img blur__img">
+                    <div class="grey__img blur__img about-img">
                       <img [src]="image.source_url" class="w-100" [alt]="image.alt_text" *ngIf="!!image; else openAboutMedia" />
                       <ng-template #openAboutMedia>
                         <img [src]="media.source_url" class="w-100" [alt]="media.alt_text" />
