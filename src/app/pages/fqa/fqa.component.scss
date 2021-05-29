@@ -5,7 +5,8 @@
     cursor: pointer;
   }
   &--element:hover {
-    background: $bSuccess;
+    background-color: $bSuccess;
+    color: #FFFFFF;
   }
 }
 

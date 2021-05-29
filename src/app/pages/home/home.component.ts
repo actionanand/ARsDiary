@@ -33,8 +33,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
   //   return bodyStyles.getPropertyValue('--' + name);
   // }
 
-   changeStyle($event: MouseEvent){
-    this.bgColor = $event.type == 'mouseover' ? this.bSuccess : this.balticSea;
+   changeStyle($event: MouseEvent) {
+    // this.bgColor = $event.type == 'mouseover' ? this.bSuccess : this.balticSea;
+    let imgBlock = document.querySelector('img');
+      if ($event.type == 'mouseover') {
+        this.bgColor = this.bSuccess;
+        // console.log(imgBlock);
+        imgBlock.classList.add('about-img--hover');
+      } else {
+        this.bgColor = this.balticSea;
+        imgBlock.classList.remove('about-img--hover');
+      }
     }
-
 }
