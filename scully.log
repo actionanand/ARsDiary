@@ -204,3 +204,10 @@ You can ignore the warning (TLS) or run scully with --no-warning
 ****************************************************************************************
 
 Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+****************************************************************************************
+This is a development tool for Scully applications.
+You can ignore the warning (TLS) or run scully with --no-warning
+****************************************************************************************
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
