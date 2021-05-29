@@ -1,19 +1,40 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+
+import { SassHelperComponent } from 'src/app/shared/sass-helper/sass-helper.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
-  bgColor: string = '#292b2c';
+export class HomeComponent implements OnInit, AfterViewInit {
+
+  @ViewChild(SassHelperComponent) private sassHelper: SassHelperComponent;
+
+  bSuccess: string;
+  balticSea: string;
+  bgColor: string;
 
   constructor() { }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {
+    // console.log(this.readProperty('bSuccess'));
+   }
 
-   changeStyle($event){
-    this.bgColor = $event.type == 'mouseover' ? '#5cb85c' : '#292b2c';
+   ngAfterViewInit() {
+    this.balticSea = this.sassHelper.readProperty('balticSea');
+    this.bSuccess = this.sassHelper.readProperty('bSuccess');
+    this.bgColor = this.balticSea;
+   }
+
+
+  // readProperty(name: string): string {
+  //   const bodyStyles = window.getComputedStyle(document.body);
+  //   return bodyStyles.getPropertyValue('--' + name);
+  // }
+
+   changeStyle($event: MouseEvent){
+    this.bgColor = $event.type == 'mouseover' ? this.bSuccess : this.balticSea;
     }
 
 }

@@ -1,3 +1,5 @@
+@import '../../shared/sass-helper/styles_variables';
+
 /* Gray Scale */
 .grey__img img {
 	-webkit-filter: grayscale(100%);
@@ -122,7 +124,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(92, 184, 92, 0.6);
+  // background: rgba(92, 184, 92, 0.6);
+  background: rgba($bSuccess, 0.6);
   color: #fff;
   visibility: hidden;
   opacity: 0;

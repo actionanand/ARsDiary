@@ -1,12 +1,14 @@
+@import '../../shared/sass-helper/styles_variables';
+
 .faq__left{
   &--element {
     cursor: pointer;
   }
   &--element:hover {
-    background: #5cb85c;
+    background: $bSuccess;
   }
 }
 
 // .list-group-item-action{
-//   background: green;
+//   background: $bSuccess;
 // }

@@ -7,12 +7,14 @@ import { environment } from '../../environments/environment';
 import { StripHtmlPipe } from '../pipes/strip-html.pipe';
 import { EllipsisPipe } from '../pipes/ellipsis.pipe';
 import { RmApostrophePipe } from '../pipes/rm-apostrophe.pipe';
+import { SassHelperModule } from './sass-helper/sass-helper.module';
 
 
 @NgModule({
   declarations: [StripHtmlPipe, EllipsisPipe, RmApostrophePipe],
   imports: [
     CommonModule,
+    SassHelperModule,
     NgWpComponentsModule.forRoot(environment.wp_url)
     // NgWpComponentsModule.forRoot(environment.wp_url2)
   ],
@@ -20,7 +22,8 @@ import { RmApostrophePipe } from '../pipes/rm-apostrophe.pipe';
     NgWpComponentsModule,
     StripHtmlPipe,
     EllipsisPipe,
-    RmApostrophePipe
+    RmApostrophePipe,
+    SassHelperModule
   ]
 })
 export class SharedModule { }

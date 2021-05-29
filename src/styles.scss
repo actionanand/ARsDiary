@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/shared/sass-helper/styles_variables';
+
+// $myCustomVariable: #0d6efd;
+
+$prefix: "--"; // Prefix string for custom CSS properties
+
+// Merges a variable name with $prefix
+@function custom-property-name($name) {
+    @return $prefix + $name;
+}
+
+// Defines a custom property
+@mixin define-custom-property($name, $value) {
+    #{custom-property-name($name)}: $value;
+}
+
+body {
+    // // Append pre-defined colors in $colors:
+    // @each $name, $value in $colors {
+    //     @include define-custom-property($name, $value);
+    // }
+    // Append SASS variables which are desired to be accesible:
+    @include define-custom-property('bDark', $bDark);
+    @include define-custom-property('bSuccess', $bSuccess);
+    @include define-custom-property('balticSea', $balticSea);
+}
+
+a {
+    // color: #0d6efd;
+    text-decoration: none;
+}
