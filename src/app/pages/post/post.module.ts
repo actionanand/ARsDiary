@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PostRoutingModule } from './post-routing.module';
 import { PostComponent } from './post.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { Page404Module } from '../page404/page404.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     PostRoutingModule,
-    SharedModule
+    SharedModule,
+    Page404Module
   ]
 })
 export class PostModule { }

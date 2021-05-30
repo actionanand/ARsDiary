@@ -12,6 +12,7 @@ import { Page404Component } from './page404.component';
   imports: [
     CommonModule,
     Page404RoutingModule
-  ]
+  ],
+  exports: [Page404Component]
 })
 export class Page404Module { }

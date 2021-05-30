@@ -1,8 +1,8 @@
-<div class="container d-flex justify-content-center" style="width: 64vw;">
+<div class="container d-flex justify-content-center" style="width: 64vw;" *ngIf="wpPostFound">
   <div class="card">
     <wp-post [slug]="slug$ | async">
       <ng-template let-post="post">
-        <h5 class="card-header text-center">{{ post.title.rendered }}</h5>
+        <h5 class="card-header text-center" #checkTitle>{{ post.title.rendered }}</h5>
         <wp-image size="large" [mediaId]="post.featured_media">
           <ng-template let-image="image" let-media="media">
             <div class="img-hover-zoom">
@@ -20,3 +20,7 @@
     </wp-post>
   </div>
 </div>
+<div *ngIf="!wpPostFound">
+  <app-page404></app-page404>
+</div>
+
