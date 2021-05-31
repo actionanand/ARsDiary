@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Observable } from 'rxjs';
@@ -10,11 +10,9 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./post.component.scss']
 })
 
-export class PostComponent implements OnInit, AfterViewInit {
+export class PostComponent implements OnInit {
 
-  @ViewChild('checkTitle') private checkTitle: ElementRef;
   slug$: Observable<string>;
-  wpPostFound: boolean = true;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -22,16 +20,6 @@ export class PostComponent implements OnInit, AfterViewInit {
      this.slug$ = this.route.paramMap.pipe(
       map( params => params.get( 'post-slug' ))
     );
-  }
-
-  ngAfterViewInit() {
-    try {
-      setTimeout(() => {
-      this.wpPostFound = !!this.checkTitle || false;
-    },3000);
-    } catch (error) {
-      this.wpPostFound = false;
-    }
   }
 
 }

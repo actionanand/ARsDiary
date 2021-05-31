@@ -1,4 +1,4 @@
-<div class="container d-flex justify-content-center" style="width: 64vw;" *ngIf="wpPostFound">
+<div class="container d-flex justify-content-center" style="width: 64vw;">
   <div class="card">
     <wp-post [slug]="slug$ | async">
       <ng-template let-post="post">
@@ -19,8 +19,5 @@
       </ng-template>
     </wp-post>
   </div>
-</div>
-<div *ngIf="!wpPostFound">
-  <app-page404></app-page404>
 </div>
 
