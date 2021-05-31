@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NgWpComponentsModule } from 'ng-wp-components';
+import { ScullyInterceptModule } from 'scully-interceptor';
 
 import { environment } from '../../environments/environment';
 import { StripHtmlPipe } from '../pipes/strip-html.pipe';
@@ -15,11 +16,13 @@ import { SassHelperModule } from './sass-helper/sass-helper.module';
   imports: [
     CommonModule,
     SassHelperModule,
-    NgWpComponentsModule.forRoot(environment.wp_url)
-    // NgWpComponentsModule.forRoot(environment.wp_url2)
+    NgWpComponentsModule.forRoot(environment.wp_url),
+    // NgWpComponentsModule.forRoot(environment.wp_url2),
+    ScullyInterceptModule
   ],
   exports: [
     NgWpComponentsModule,
+    ScullyInterceptModule,
     StripHtmlPipe,
     EllipsisPipe,
     RmApostrophePipe,
