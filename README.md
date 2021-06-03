@@ -88,8 +88,9 @@ It'll display as below. Please note down the PID from that
 - [UpdraftPlus WordPress Backup Plugin](https://wordpress.org/plugins/updraftplus/)
 - [Sassy Social Share](https://wordpress.org/plugins/sassy-social-share/)
 - [Redirection](https://wordpress.org/plugins/redirection/)
-- 24 Must Have WordPress Plugins from [WP BEGINNER](https://www.wpbeginner.com/showcase/24-must-have-wordpress-plugins-for-business-websites/)
-- 25 Best WordPress Plugins from [Website setup](https://websitesetup.org/best-popular-wordpress-plugins/)
+- [24 Must Have WordPress Plugins from WP BEGINNER](https://www.wpbeginner.com/showcase/24-must-have-wordpress-plugins-for-business-websites/)
+- [25 Best WordPress Plugins from Website setup](https://websitesetup.org/best-popular-wordpress-plugins/)
+- [9 Powerful WordPress Migration Plugins](https://kinsta.com/blog/wordpress-migration-plugins/)
 
 ## Further help
 
