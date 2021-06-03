@@ -91,6 +91,7 @@ It'll display as below. Please note down the PID from that
 - [24 Must Have WordPress Plugins from WP BEGINNER](https://www.wpbeginner.com/showcase/24-must-have-wordpress-plugins-for-business-websites/)
 - [25 Best WordPress Plugins from Website setup](https://websitesetup.org/best-popular-wordpress-plugins/)
 - [9 Powerful WordPress Migration Plugins](https://kinsta.com/blog/wordpress-migration-plugins/)
+- [9 Best WordPress Migration Plugins (Compared)](https://www.wpbeginner.com/showcase/best-wordpress-migration-plugins-compared/)
 
 ## Further help
 
