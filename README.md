@@ -74,6 +74,25 @@ It'll display as below. Please note down the PID from that
 - To check pages: `https://your-site-name/wp-json/wp/v2/pages`
 - To check home post slug: `https://your-site-name/wp-json/wp/v2/pages?slug=home`
 
+## Other Wordpress plugins
+
+- [JAMstack Deployments](https://wordpress.org/plugins/wp-jamstack-deployments/)
+- [WP-REST-API V2 Menus](https://wordpress.org/plugins/wp-rest-api-v2-menus/)
+- [Code Snippets](https://wordpress.org/plugins/code-snippets/)
+1. [How to Add Excerpts to Your Pages in WordPress](https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/)
+2. [WHAT, WHY, AND HOW-TO’S OF CREATING A SITE-SPECIFIC WORDPRESS PLUGIN
+- [WP Reset](https://wordpress.org/plugins/wp-reset/)
+- [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
+- [WP fail2ban](https://wordpress.org/plugins/wp-fail2ban/)
+- [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/)
+- [UpdraftPlus WordPress Backup Plugin](https://wordpress.org/plugins/updraftplus/)
+- [Sassy Social Share](https://wordpress.org/plugins/sassy-social-share/)
+- [Redirection](https://wordpress.org/plugins/redirection/)
+- 24 Must Have WordPress Plugins from WP BEGINNER(https://www.wpbeginner.com/showcase/24-must-have-wordpress-plugins-for-business-websites/)
+- 25 Best WordPress Plugins from [Website setup](https://websitesetup.org/best-popular-wordpress-plugins/)
+
+What, Why, and How-To’s of Creating a Site-Specific WordPress Plugin](https://www.wpbeginner.com/beginners-guide/what-why-and-how-tos-of-creating-a-site-specific-wordpress-plugin/)
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
