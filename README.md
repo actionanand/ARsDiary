@@ -80,7 +80,7 @@ It'll display as below. Please note down the PID from that
 - [WP-REST-API V2 Menus](https://wordpress.org/plugins/wp-rest-api-v2-menus/)
 - [Code Snippets](https://wordpress.org/plugins/code-snippets/)
 1. [How to Add Excerpts to Your Pages in WordPress](https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/)
-2. [WHAT, WHY, AND HOW-TO’S OF CREATING A SITE-SPECIFIC WORDPRESS PLUGIN
+2. [What, Why, and How-To’s of Creating a Site-Specific WordPress Plugin](https://www.wpbeginner.com/beginners-guide/what-why-and-how-tos-of-creating-a-site-specific-wordpress-plugin/)
 - [WP Reset](https://wordpress.org/plugins/wp-reset/)
 - [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
 - [WP fail2ban](https://wordpress.org/plugins/wp-fail2ban/)
@@ -88,10 +88,8 @@ It'll display as below. Please note down the PID from that
 - [UpdraftPlus WordPress Backup Plugin](https://wordpress.org/plugins/updraftplus/)
 - [Sassy Social Share](https://wordpress.org/plugins/sassy-social-share/)
 - [Redirection](https://wordpress.org/plugins/redirection/)
-- 24 Must Have WordPress Plugins from WP BEGINNER(https://www.wpbeginner.com/showcase/24-must-have-wordpress-plugins-for-business-websites/)
+- 24 Must Have WordPress Plugins from [WP BEGINNER](https://www.wpbeginner.com/showcase/24-must-have-wordpress-plugins-for-business-websites/)
 - 25 Best WordPress Plugins from [Website setup](https://websitesetup.org/best-popular-wordpress-plugins/)
-
-What, Why, and How-To’s of Creating a Site-Specific WordPress Plugin](https://www.wpbeginner.com/beginners-guide/what-why-and-how-tos-of-creating-a-site-specific-wordpress-plugin/)
 
 ## Further help
 
