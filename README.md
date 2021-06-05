@@ -32,14 +32,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
  ## Scully - Help
  - [Scully official](https://scully.io/)
- - [JAMstack Static Site generator](https://jamstack.org/generators/)
+ - [JAMstack Static Site generator](https://jamstack.org/generators/ "staticgen.com")
  - [Netlify](https://www.netlify.com/)
 
 ## Scully miscellaneous - Help
-- [Ng Wp Components](https://www.npmjs.com/package/ng-wp-components)
-- [Scully Wordpress Plugin](https://www.npmjs.com/package/scully-wordpress-plugin)
-- [ScullyInterceptor](https://www.npmjs.com/package/scully-interceptor)
-- [Scully plugin angular delay](https://www.npmjs.com/package/@flowaccount/scully-plugin-angular-delay)
+- [Ng Wp Components](https://www.npmjs.com/package/ng-wp-components "Ng Wp Components")
+- [Scully Wordpress Plugin](https://www.npmjs.com/package/scully-wordpress-plugin "Scully Wordpress Plugin")
+- [ScullyInterceptor](https://www.npmjs.com/package/scully-interceptor "ScullyInterceptor")
+- [Scully plugin angular delay](https://www.npmjs.com/package/@flowaccount/scully-plugin-angular-delay "Scully plugin angular delay")
 - [Scully Plugin Sitemap](https://www.npmjs.com/package/@gammastream/scully-plugin-sitemap)
 - [Scully Plugin Minify HTML](https://www.npmjs.com/package/scully-plugin-minify-html)
 - [NPM Install Peer](https://www.npmjs.com/package/npm-install-peers)
@@ -49,16 +49,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 1. To find the process id (PID) associated with the port
 
-`lsof -i tcp:1668`
+```shell
+lsof -i tcp:1668
+```
 
 It'll display as below. Please note down the PID from that
 
-`COMMAND PID   USER  FD  TYPE DEVICE                SIZE/OFF NODE NAME`\
-`node    44475 chen5 31u IPv4 0x8b1721168764e4bf 0t0 TCP *:strexec-s (LISTEN)`
+```bash
+COMMAND PID   USER  FD  TYPE DEVICE                SIZE/OFF NODE NAME
+node   44475 chen5 31u IPv4 0x8b1721168764e4bf 0t0 TCP *:strexec-s (LISTEN)
+```
 
 2. Then to kill the process by PID
 
-`kill -9 44475`
+```bash
+kill -9 44475
+```
 
 -[source](https://levelup.gitconnected.com/how-to-kill-server-when-seeing-eaddrinuse-address-already-in-use-16c4c4d7fe5d)
 
@@ -66,21 +72,21 @@ It'll display as below. Please note down the PID from that
 1. Make sure `permalink` is updated to post name (Settings -> permalinks) `https://your-site-name/wp-admin/options-permalink.php`
 2. Please install the wp plugin [WP-REST-API V2 Menus](https://wordpress.org/plugins/wp-rest-api-v2-menus/) to support menu options in api.
 3. Some API endpoints for help
-- To go to admin page: `https://your-site-name/wp-admin`
-- To check whether REST API is enabled or not : `https://your-site-name/wp-json`
-- If REST API is not enabled, Please check point number 1.
-- To check categories: `https://your-site-name/wp-json/wp/v2/categories`
-- To check posts: `https://your-site-name/wp-json/wp/v2/posts` , `https://your-site-name/wp-json/wp/v2/posts?per_page=100`
-- To check pages: `https://your-site-name/wp-json/wp/v2/pages`
-- To check home post slug: `https://your-site-name/wp-json/wp/v2/pages?slug=home`
+   - To go to admin page: `https://your-site-name/wp-admin`
+   - To check whether REST API is enabled or not : `https://your-site-name/wp-json`
+   - If REST API is not enabled, Please check point number 1.
+   - To check categories: `https://your-site-name/wp-json/wp/v2/categories`
+   - To check posts: `https://your-site-name/wp-json/wp/v2/posts` , `https://your-site-name/wp-json/wp/v2/posts?per_page=100`
+   - To check pages: `https://your-site-name/wp-json/wp/v2/pages`
+   - To check home post slug: `https://your-site-name/wp-json/wp/v2/pages?slug=home`
 
 ## Other Wordpress plugins
 
 - [JAMstack Deployments](https://wordpress.org/plugins/wp-jamstack-deployments/)
 - [WP-REST-API V2 Menus](https://wordpress.org/plugins/wp-rest-api-v2-menus/)
 - [Code Snippets](https://wordpress.org/plugins/code-snippets/)
-1. [How to Add Excerpts to Your Pages in WordPress](https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/)
-2. [What, Why, and How-To’s of Creating a Site-Specific WordPress Plugin](https://www.wpbeginner.com/beginners-guide/what-why-and-how-tos-of-creating-a-site-specific-wordpress-plugin/)
+   1. [How to Add Excerpts to Your Pages in WordPress](https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/ "How to Add Excerpts to Your Pages in WordPress")
+   2. [What, Why, and How-To’s of Creating a Site-Specific WordPress Plugin](https://www.wpbeginner.com/beginners-guide/what-why-and-how-tos-of-creating-a-site-specific-wordpress-plugin/)
 - [WP Reset](https://wordpress.org/plugins/wp-reset/)
 - [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
 - [WP fail2ban](https://wordpress.org/plugins/wp-fail2ban/)
